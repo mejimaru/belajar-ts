@@ -54,4 +54,6 @@ npx tsc --init
 - Tambahkan include src/\*_/_
 - Ubah outDir menjadi “./dist”
 
-#### Setup Database
+#### Setup Database 42:52
+
+gcloud auth application-default login

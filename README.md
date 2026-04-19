@@ -1,3 +1,5 @@
+#### Install Requirements
+
 npm install zod
 npm install express
 npm install --save-dev @types/express
@@ -38,7 +40,6 @@ edit babel.config.json
   "presets": [
   "@babel/preset-env",
   "@babel/preset-typescript"
-]
 }
 ```
 
@@ -52,3 +53,5 @@ npx tsc --init
 - Ubah "moduleResolution" menjadi "Node"
 - Tambahkan include src/\*_/_
 - Ubah outDir menjadi “./dist”
+
+#### Setup Database

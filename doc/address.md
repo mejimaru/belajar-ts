@@ -107,4 +107,65 @@ Response Body (Failed):
 
 ### Remove Address
 
+Endpoint: DELETE /api/contacts/:idContact/addresses/:idAddress
+
+Request Header:
+
+- X-API-TOKEN: token
+
+Response Body (Success):
+
+```json
+{
+  "data": "OK"
+}
+```
+
+Response Body (Failed):
+
+```json
+{
+  "errors": "addrees is not found"
+}
+```
+
 ### List Address
+
+Endpoint: GET /api/contacts/:idContact/addresses
+
+Request Header:
+
+- X-API-TOKEN: token
+
+Response Body (Success):
+
+```json
+{
+  "data": [
+    {
+      "id": 1,
+      "street": "Jl.Bakti",
+      "city": "Jakarta Selatan",
+      "province": "DKI Jakarta",
+      "country": "Indonesia",
+      "postal_code": "112345"
+    },
+    {
+      "id": 2,
+      "street": "Jl.Bakti",
+      "city": "Jakarta Selatan",
+      "province": "DKI Jakarta",
+      "country": "Indonesia",
+      "postal_code": "112345"
+    }
+  ]
+}
+```
+
+Response Body (Failed):
+
+```json
+{
+  "errors": "Contact is not found"
+}
+```
